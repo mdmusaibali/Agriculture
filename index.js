@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
-
+const { connect } = require("http2");
+let port = process.env.PORT || 8080;
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
@@ -28,11 +29,9 @@ app.get("/quality", function (req, res) {
   res.render("quality");
 });
 
-
 app.get("/automation", function (req, res) {
   res.render("automation");
 });
-
 
 app.get("/sowing", function (req, res) {
   res.render("sowing");
@@ -74,6 +73,6 @@ app.get("/winnowing", function (req, res) {
   res.render("winnowing");
 });
 
-app.listen(3000, function () {
-  console.log("Server running on 3000!");
+app.listen(port, function () {
+  console.log("Server Online ...");
 });
