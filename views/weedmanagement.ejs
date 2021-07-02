@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
+    <link rel="stylesheet" href="points.css" />
+    <title>Agriculture - Farming To It's Full Extent</title>
+</head>
+
+<body>
+    <nav class="navbar backgroundprotection h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="../img/img.PNG" alt="logo" /></div>
+            <li><a href="/">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contactus">Contact us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search" />
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="backgroundprotection firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big">Weed Management</h1>
+                <p class="text-small">
+                    It is the process of minimizing the weed population and their growth below the level of economic
+                    injury to the crop with minimum environmental pollution. Weeds can be managed by adopting any
+                    suitable method of weed control & if needed by combining two or more methods of weed control.
+
+                </p>
+
+                <div class="nextbutton">
+                    <button class="nbtn">
+                        <a href="/pest">Next >>></a>
+                    </button>
+                    <!-- changed -->
+                </div>
+
+            </div>
+            <div class="secondHalf">
+                <img src="../img/weedmanagement.jpg" alt="Logo image" />
+
+            </div>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        burger = document.querySelector(".burger");
+        navbar = document.querySelector(".navbar");
+        rightNav = document.querySelector(".rightNav");
+        navList = document.querySelector(".nav-list");
+
+        burger.addEventListener("click", () => {
+            rightNav.classList.toggle("v-class-resp");
+            navList.classList.toggle("v-class-resp");
+            navbar.classList.toggle("h-nav-resp");
+        });
+    </script>
+</body>
+
+</html>

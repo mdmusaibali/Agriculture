@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
+    <link rel="stylesheet" href="points.css" />
+    <title>Agriculture - Farming To It's Full Extent</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="../img/img.PNG" alt="logo" /></div>
+            <li><a href="/">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contactus">Contact us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search" />
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big">Manure</h1>
+                <p class="text-small">
+                    The use of manure as a fertilizer for crop production is a very beneficial way to recycle manure
+                    nutrients within an agricultural system. Manure not only acts as a source of plant nutrients
+                    but, through the addition of organic matter, it also helps to improve structure,
+                    aeration and water holding capacity of soil. <br>Pesticides are applied to the seed prior to planting, in
+                    the form of a seed treatment, or coating, to protect against soil-borne risks to the plant <br>
+                    Fertilizers are applied to replace the essential nutrients for plant growth to the soil after they
+                    have been depleted.
+
+                </p>
+
+                <div class="nextbutton">
+                    <button class="nbtn">
+                        <a href="/protecting">Next >>></a>
+                        <!-- Next >>> -->
+                    </button>
+                    <!-- changed -->
+                </div>
+
+            </div>
+            <div class="secondHalf">
+                <img src="../img/manure.jpg" alt="Logo image" />
+
+            </div>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        burger = document.querySelector(".burger");
+        navbar = document.querySelector(".navbar");
+        rightNav = document.querySelector(".rightNav");
+        navList = document.querySelector(".nav-list");
+
+        burger.addEventListener("click", () => {
+            rightNav.classList.toggle("v-class-resp");
+            navList.classList.toggle("v-class-resp");
+            navbar.classList.toggle("h-nav-resp");
+        });
+    </script>
+</body>
+
+</html>
