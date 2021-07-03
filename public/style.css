@@ -306,6 +306,32 @@ input[type="text"]:focus {
   text-decoration: none;
   color: rgb(218, 197, 197);
 }
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.musaib{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 80px;
+}
+.rehaan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.musaib img{
+  width: 200px;
+}
+.rehaan img{
+  width: 200px;
+}
 @media only screen and (max-width:1223px){
   .nav-list{
     flex-direction:column;
@@ -339,5 +365,8 @@ input[type="text"]:focus {
   }
   .secondSection{
     height:110vh;
+  }
+  .about{
+    flex-direction: column;
   }
 }
